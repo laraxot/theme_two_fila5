@@ -22,10 +22,13 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         @filamentStyles
-        @vite(['Resources/css/app.css'],'themes/Two/dist')
+        @vite(['resources/css/app.css'], 'themes/Two')
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <!-- Alpine.js (must be loaded before cookie-consent for $dispatch to work) -->
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
     <body>
@@ -34,6 +37,6 @@
         @livewire('notifications')
 
         @filamentScripts
-        @vite(['Resources/js/app.js'],'themes/Two/dist')
+        @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
