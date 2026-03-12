@@ -69,7 +69,7 @@ Oggi il tema esiste ma il suo ruolo non e' pienamente definito:
 
 ## 9. References
 
-- [PRD Indice Centrale](../../../project_docs/PRD_INDEX_2026_03_12.md)
+- [PRD Indice Centrale](../../../../docs/project/PRD_INDEX_2026_03_12.md)
 - [theme.json](../theme.json)
 
 ## Testing & Coverage
