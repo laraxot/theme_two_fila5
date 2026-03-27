@@ -1,14 +1,16 @@
-@php
-declare(strict_types=1);
-
 @props([
     'title' => '',
     'subtitle' => '',
     'description' => '',
-    'backgroundImage' => '',
-    'stats' => []
+    'primary_cta_label' => '',
+    'primary_cta_url' => '#',
+    'secondary_cta_label' => '',
+    'secondary_cta_url' => '#',
+    'image' => '',
+    'overlay_opacity' => 0.7,
+    'text_alignment' => 'center',
+    'stats' => [],
 ])
-?>
 
 {{-- Enhanced hero with glassmorphism and animations --}}
 <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
@@ -50,36 +52,24 @@ declare(strict_types=1);
                 </p>
             @endif
             
+            @if(!empty($primary_cta_label) || !empty($secondary_cta_label))
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up" style="animation-delay: 0.6s;">
-                @if(isset($ctaPrimary['label']))
-                    <a href="{{ $ctaPrimary['url'] ?? '#' }}" 
+                @if(!empty($primary_cta_label))
+                    <a href="{{ $primary_cta_url }}"
                        class="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-blue-500/50 hover:-translate-y-1">
-                        
-                        {{--
-                            Shine effect on hover
-                        --}}
                         <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        {{--
-                            Animated icon with bounce effect
-                        --}}
-                        <div class="relative z-10 flex items-center">
-                            <svg class="w-6 h-6 text-white animate-bounce" style="animation-duration: 2s; animation-delay: 0.8s;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7m0 0l-7-7m7 7H3"/>
-                            </svg>
-                        </div>
-                        
-                        <span class="ml-3">{{ $ctaPrimary['label'] ?? 'Inizia Ora' }}</span>
+                        <span class="relative z-10">{{ $primary_cta_label }}</span>
                     </a>
                 @endif
-                
-                @if(isset($ctaSecondary['label']))
-                    <a href="{{ $ctaSecondary['url'] ?? '#' }}" 
-                       class="group relative px-8 py-4 bg-white/10 backdrop-blur-sm text-gray-900 font-semibold rounded-2xl border border-gray-200 shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-gray-200/50 hover:-translate-y-1">
-                        <span class="ml-3">{{ $ctaSecondary['label'] ?? 'Scopri di Più' }}</span>
+
+                @if(!empty($secondary_cta_label))
+                    <a href="{{ $secondary_cta_url }}"
+                       class="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-2xl border border-white/30 shadow-xl transform transition-all duration-500 hover:scale-105 hover:bg-white/20">
+                        {{ $secondary_cta_label }}
                     </a>
                 @endif
             </div>
+            @endif
         </div>
     </div>
 
