@@ -76,7 +76,7 @@
                         @if(isset($sector['compliance']))
                         <div class="bg-white/50 p-4 rounded-lg border border-{{ $brandColor }}/20">
                             <h4 class="text-sm font-semibold text-{{ $brandColor }} mb-2 flex items-center">
-                                <x-heroicon-o-shield-check class="w-4 h-4 mr-2" />
+                                <x-filament::icon name="heroicon-o-shield-check" class="w-4 h-4 mr-2" />
                                 Conformità:
                             </h4>
                             <p class="text-sm text-gray-600">{{ $sector['compliance'] }}</p>
