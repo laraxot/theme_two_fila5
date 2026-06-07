@@ -1,7 +1,9 @@
+@volt('profile.index')
 <?php
 
 use function Livewire\Volt\{state, mount};
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 state([
     'name' => '',
@@ -119,3 +121,6 @@ $updatePassword = function() {
         </div>
     </x-filament::page>
 </div>
+@endvolt
+
+

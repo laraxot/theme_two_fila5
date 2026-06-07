@@ -19,7 +19,6 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
     public function register(): void
     {
         parent::register();
-        // Aggiungi qui solo logica specifica del tema
     }
 
     public function boot(): void

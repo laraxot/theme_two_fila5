@@ -18,6 +18,25 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Grid;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Actions;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteAction;
+use App\Filament\Resources\PageResource\Pages\ListPages;
+use App\Filament\Resources\PageResource\Pages\CreatePage;
+use App\Filament\Resources\PageResource\Pages\EditPage;
+use App\Filament\Fields\PageContent;
+use App\Filament\Resources\PageResource\Pages;
+use App\Models\Page;
+use Filament\Forms;
+use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Pboivin\FilamentPeek\Forms\Actions\InlinePreviewAction;
 use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
@@ -91,3 +110,7 @@ class PageResource extends Resource
         ];
     }
 }
+
+
+
+
