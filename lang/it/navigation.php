@@ -15,3 +15,4 @@ return [
     'login_cta' => 'Accedi',
     'dashboard_cta' => 'Area personale',
 ];
+

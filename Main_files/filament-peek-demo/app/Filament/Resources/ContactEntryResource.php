@@ -15,6 +15,21 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\HtmlString;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+use Filament\Schemas\Schema;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\ViewAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteBulkAction;
+use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
+use App\Filament\Resources\ContactEntryResource\Pages\ViewContactEntry;
+use App\Filament\Resources\ContactEntryResource\Pages;
+use App\Models\ContactEntry;
+use Filament\Infolists;
+use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Illuminate\Support\HtmlString;
 
 class ContactEntryResource extends Resource
 {
@@ -74,3 +89,7 @@ class ContactEntryResource extends Resource
         ];
     }
 }
+
+
+
+

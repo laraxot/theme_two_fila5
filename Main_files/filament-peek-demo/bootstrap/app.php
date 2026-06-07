@@ -4,6 +4,10 @@ use App\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Application;
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Contracts\Debug\ExceptionHandler;
+use App\Exceptions\Handler;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +62,6 @@ $app->singleton(
 */
 
 return $app;
+
+
+

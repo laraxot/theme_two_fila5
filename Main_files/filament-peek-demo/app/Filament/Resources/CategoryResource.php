@@ -14,6 +14,21 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+use Filament\Schemas\Schema;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteAction;
+use App\Filament\Resources\CategoryResource\Pages\ManageCategories;
+use App\Filament\Resources\CategoryResource\Pages;
+use App\Models\Category;
+use Filament\Forms;
+use Filament\Notifications\Notification;
+use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Illuminate\Support\Str;
 
 class CategoryResource extends Resource
 {
@@ -78,3 +93,7 @@ class CategoryResource extends Resource
         ];
     }
 }
+
+
+
+

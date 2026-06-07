@@ -6,8 +6,6 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
-            //publicDirectory: '../../../public_html',
-            //buildDirectory: 'themes/Two',
             outDir: './public',
             buildDirectory: '.',
             emptyOutDir: false,
@@ -17,4 +15,3 @@ export default defineConfig({
         tailwindcss(),
     ],
 })
-
