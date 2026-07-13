@@ -7,11 +7,9 @@ use Filament\Notifications\Actions\Action;
 use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\VerticalAlignment;
 use Livewire\Volt\Component;
-use Modules\Tenant\Services\TenantService;
 
 /** @var array $base_middleware */
 // Per configurazioni avanzate:
-// $middleware = TenantService::config('middleware');
 // $base_middleware = Arr::get($middleware, 'base', []);
 // @var array
 $base_middleware = [];
