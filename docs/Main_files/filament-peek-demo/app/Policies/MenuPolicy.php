@@ -3,13 +3,13 @@
 namespace App\Policies;
 
 use App\Models\Menu;
-use Illuminate\Auth\Access\HandlesAuthorization;
-use Illuminate\Auth\Access\Response;
-use Modules\User\Models\User;
-use Illuminate\Auth\Access\Response;
 use App\Models\Menu;
-use Modules\User\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Auth\Access\Response;
+use Illuminate\Auth\Access\Response;
+use Modules\User\Models\User;
+use Modules\User\Models\User;
 
 class MenuPolicy
 {
@@ -85,6 +85,3 @@ class MenuPolicy
         return false;
     }
 }
-
-
-
