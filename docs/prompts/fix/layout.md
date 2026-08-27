@@ -1,3 +1,5 @@
+# Layout
+
 # Fix: Alpine.js e asset nel tema Two
 
 ## Regola architetturale: NO CDN per JS/CSS del tema

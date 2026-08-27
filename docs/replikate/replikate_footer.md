@@ -1,3 +1,5 @@
+# Replikate footer
+
 concentrati sul footer di https://lightseagreen-dogfish-560272.hostingersite.com/termini come vedi lo sfondo e' blu, i caratteri sono chiari, ci sono 4 colonne e in piu' un altro pezzo di footer sotto con i link per la privacy policy e i termini e condizioni , ti ricordo che il footer viene chiamato tramite <x-section slug="footer" /> percio' devi studiare laravel/Modules/Cms/app/View/Components/Section.php  e capite che la blade e' la laravel/Themes/Two/resources/views/components/sections/footer/v1.blade.php cerca di capire la ui/ux , fatti screenshots, documenta le cose da fare , 
 
 

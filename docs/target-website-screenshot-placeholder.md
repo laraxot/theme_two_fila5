@@ -1,3 +1,5 @@
+# Target website screenshot placeholder
+
 TARGET WEBSITE SCREENSHOT PLACEHOLDER
 ========================================
 

@@ -1,3 +1,5 @@
+# Socialite
+
 prima studia a fondo
 https://www.itsolutionstuff.com/post/laravel-12-socialite-login-with-microsoft-account-exampleexample.html
 https://www.luckymedia.dev/blog/how-to-use-microsoft-oauth2-with-laravel-socialite-for-user-authentication
@@ -31,4 +33,3 @@ https://laracasts.com/discuss/channels/filament/use-breeze-login-and-register-pa
 https://filamentphp.com/docs/5.x/introduction/overview
 
 poi aggiorna,studia e migliora le cartelle docs dentro i moduli e dentro i temi e aggiorna le tue rules le tue memories e le tue skills
-
