@@ -5,6 +5,7 @@
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
+<<<<<<< HEAD
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
@@ -14,3 +15,5 @@ CHANGELOG.md export-ignore
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
+=======
+>>>>>>> laraxot/dev
