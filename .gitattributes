@@ -29,6 +29,9 @@ CHANGELOG.md export-ignore
 *.phar binary !filter
 *.db binary !filter
 *.sqlite binary !filter
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
