@@ -10,6 +10,7 @@
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
 =======
+>>>>>>> ad90ea0 (.)
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
 *.jpg !text !filter !merge !diff
