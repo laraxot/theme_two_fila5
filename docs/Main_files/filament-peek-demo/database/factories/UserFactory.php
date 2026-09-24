@@ -39,5 +39,8 @@ class UserFactory extends Factory
         ]);
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c34c6d1 (.)

@@ -1,6 +1,7 @@
 <?php
 
 use App\Exceptions\Handler;
+<<<<<<< HEAD
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Foundation\Application;
@@ -8,6 +9,15 @@ use Illuminate\Foundation\Application;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use App\Exceptions\Handler;
+=======
+use App\Exceptions\Handler;
+use Illuminate\Contracts\Debug\ExceptionHandler;
+use Illuminate\Contracts\Debug\ExceptionHandler;
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Application;
+>>>>>>> c34c6d1 (.)
 
 /*
 |--------------------------------------------------------------------------
@@ -62,6 +72,9 @@ $app->singleton(
 */
 
 return $app;
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> c34c6d1 (.)
