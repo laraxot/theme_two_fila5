@@ -84,5 +84,8 @@ return [
     'disable_bubble_menus' => true,
     'floating_menu_tools' => ['media', 'grid', 'grid-builder', 'details', 'table', 'oembed', 'code-block'],
 ];
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c34c6d1 (.)

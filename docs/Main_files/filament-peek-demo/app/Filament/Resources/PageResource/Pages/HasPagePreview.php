@@ -45,5 +45,8 @@ trait HasPagePreview
         ];
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c34c6d1 (.)
