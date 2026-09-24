@@ -5,25 +5,7 @@
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
-=======
-=======
->>>>>>> ad90ea0 (.)
-/.github export-ignore
-CHANGELOG.md export-ignore
-.styleci.yml export-ignore
-*.png !text !filter !merge !diff
-*.svg !text !filter !merge !diff
-*.jpg !text !filter !merge !diff
-*.jpeg !text !filter !merge !diff
-*.gif !text !filter !merge !diff
-*.webp !text !filter !merge !diff
-<<<<<<< HEAD
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)

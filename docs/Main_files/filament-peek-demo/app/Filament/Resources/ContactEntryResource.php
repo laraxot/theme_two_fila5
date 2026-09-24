@@ -3,8 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ContactEntryResource\Pages;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
 use App\Filament\Resources\ContactEntryResource\Pages\ViewContactEntry;
 use App\Models\ContactEntry;
@@ -32,38 +30,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\HtmlString;
-=======
-=======
->>>>>>> ad90ea0 (.)
-use App\Filament\Resources\ContactEntryResource\Pages;
-use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
-use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
-use App\Filament\Resources\ContactEntryResource\Pages\ViewContactEntry;
-use App\Filament\Resources\ContactEntryResource\Pages\ViewContactEntry;
-use App\Models\ContactEntry;
-use App\Models\ContactEntry;
-use Filament\Actions\DeleteBulkAction;
-use Filament\Actions\DeleteBulkAction;
-use Filament\Actions\EditAction;
-use Filament\Actions\EditAction;
-use Filament\Actions\ViewAction;
-use Filament\Actions\ViewAction;
-use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Components\TextEntry;
-use Filament\Schemas\Schema;
-use Filament\Schemas\Schema;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
-use Filament\Tables\Table;
-use Illuminate\Support\HtmlString;
-use Illuminate\Support\HtmlString;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-<<<<<<< HEAD
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)
 
 class ContactEntryResource extends Resource
 {
@@ -123,13 +89,7 @@ class ContactEntryResource extends Resource
         ];
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)

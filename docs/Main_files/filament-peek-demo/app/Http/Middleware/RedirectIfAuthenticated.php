@@ -28,11 +28,5 @@ class RedirectIfAuthenticated
         return $next($request);
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
-=======
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)

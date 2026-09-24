@@ -3,8 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CategoryResource\Pages\ManageCategories;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use App\Models\Category;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
@@ -31,36 +29,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
-=======
-=======
->>>>>>> ad90ea0 (.)
-use App\Filament\Resources\CategoryResource\Pages\ManageCategories;
-use App\Models\Category;
-use App\Models\Category;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\DeleteAction;
-use Filament\Actions\DeleteAction;
-use Filament\Actions\EditAction;
-use Filament\Actions\EditAction;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\TextInput;
-use Filament\Notifications\Notification;
-use Filament\Notifications\Notification;
-use Filament\Schemas\Schema;
-use Filament\Schemas\Schema;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
-use Filament\Tables\Table;
-use Illuminate\Support\Str;
-use Illuminate\Support\Str;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-<<<<<<< HEAD
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)
 
 class CategoryResource extends Resource
 {
@@ -125,13 +93,7 @@ class CategoryResource extends Resource
         ];
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)
