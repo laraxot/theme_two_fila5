@@ -3,8 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\MenuResource\Pages;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use App\Filament\Resources\MenuResource\Pages\EditMenu;
 use App\Filament\Resources\MenuResource\Pages\ListMenus;
 use App\Models\Menu;
@@ -34,40 +32,6 @@ use Filament\Forms;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-=======
-=======
->>>>>>> ad90ea0 (.)
-use App\Filament\Resources\MenuResource\Pages;
-use App\Filament\Resources\MenuResource\Pages\EditMenu;
-use App\Filament\Resources\MenuResource\Pages\EditMenu;
-use App\Filament\Resources\MenuResource\Pages\ListMenus;
-use App\Filament\Resources\MenuResource\Pages\ListMenus;
-use App\Models\Menu;
-use App\Models\Menu;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\EditAction;
-use Filament\Actions\EditAction;
-use Filament\Forms\Components\Radio;
-use Filament\Forms\Components\Radio;
-use Filament\Forms\Components\Repeater;
-use Filament\Forms\Components\Repeater;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Schema;
-use Filament\Schemas\Schema;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
-use Filament\Tables\Table;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-<<<<<<< HEAD
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)
 
 class MenuResource extends Resource
 {
@@ -138,13 +102,7 @@ class MenuResource extends Resource
         ];
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> c34c6d1 (.)
-=======
->>>>>>> ad90ea0 (.)
