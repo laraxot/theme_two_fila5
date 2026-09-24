@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Models\ContactEntry;
+<<<<<<< HEAD
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 use Modules\User\Models\User;
@@ -10,6 +11,15 @@ use Illuminate\Auth\Access\Response;
 use App\Models\ContactEntry;
 use Modules\User\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+=======
+use App\Models\ContactEntry;
+use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Auth\Access\Response;
+use Illuminate\Auth\Access\Response;
+use Modules\User\Models\User;
+use Modules\User\Models\User;
+>>>>>>> c34c6d1 (.)
 
 class ContactEntryPolicy
 {
@@ -85,6 +95,9 @@ class ContactEntryPolicy
         return true;
     }
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> c34c6d1 (.)

@@ -4,7 +4,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+<<<<<<< HEAD
 return new class extends Migration
+=======
+return new class() extends Migration
+>>>>>>> c34c6d1 (.)
 {
     /**
      * Run the migrations.
@@ -34,5 +38,8 @@ return new class extends Migration
         Schema::dropIfExists('failed_jobs');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c34c6d1 (.)
