@@ -54,7 +54,7 @@
             <footer class="mt-auto text-center">
                 <x-std tpl='container' class="text-gray-700">
                     <div class="flex flex-col lg:flex-row items-center justify-center space-x-4">
-                        <span>Copyright © {{ date('Y') }} ACME inc.</span>
+                        <span>{{ __('pub_theme::footer.legal.notice.label', ['year' => date('Y'), 'name' => 'ACME inc.']) }}</span>
                         <x-menu name="footer" />
                     </div>
                 </x-std>
