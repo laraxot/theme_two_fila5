@@ -53,7 +53,7 @@
                       </svg>
                       <div class="it-brand-text">
                         <div class="it-brand-title">{{ __('pub_theme::header_portal.brand.municipality.title') }}</div>
-                        <div class="it-brand-tagline d-none d-md-block">{{ __('pub_theme::header_portal.brand.tagline.description') }} </div>
+                        <div class="it-brand-tagline d-none d-md-block">{{ __('pub_theme::header_portal.brand.tagline.description') }}</div>
                       </div>
                     </a>
                 </div>
@@ -186,7 +186,7 @@
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="argomenti.html" data-element="all-topics">
-                            <span>{{ __('pub_theme::header_portal.nav.all_topics.label') }} 
+                            <span>{{ __('pub_theme::header_portal.nav.all_topics.label') }}
                               <svg class="icon icon-sm">
                                 <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use>
                               </svg>
