@@ -79,13 +79,11 @@ sono 123x20 e «Leggi» 57x16.
 - **Login** (`/it/auth/login`, widget Filament del modulo User, fuori dal tema): campi a 14 px (iOS zooma al focus) e alti 36 px,
   «ricordami» 16x16 (serve 24), nessun `h1` visibile su telefono e nessun `main`.
 - **`/it/cookie-policy`**: nessun `h1` (contenuto del CMS/Gdpr).
-- **Immagini 404**: `/themes/Two/images/hero-bg.jpg`, `medical-equipment.jpg` (`/it/about`, `/it/blog`) e
-  `service-odontoiatria.jpg` (`/it/services`). Le immagini del tema SONO pubblicate, ma sotto un percorso annidato:
-  `Themes/Two/public/themes/Two/images/` (14 file), servito come `/themes/Two/themes/Two/images/hero-bg.jpg` (200, 529.781 B) e
-  `medical-equipment.jpg` (200, 537.086 B), mentre le viste e i JSON dei seed puntano a `/themes/Two/images/` (404). Lo stesso
-  nome sotto `/images/` (`public_html/images/`) e' 200 ma pesa 3,6 MB (`hero-bg.jpg`) e 0,9 MB (`medical-equipment.jpg`), ed e' quello che
-  carica davvero la home (LCP). `service-odontoiatria.jpg` esiste solo in `Themes/Two/resources/images/`, non in nessun percorso
-  servito. Correzione: allineare il percorso (symlink `public_html/themes/Two` -> `Themes/Two/public`) e usare le versioni da ~530 KB.
+- **Asset immagine**: il seed della home usava `/images/medical-equipment.jpg` e
+  `/images/veterinary-radiology.jpg`, mentre il contratto pubblico di Two è
+  `/themes/Two/images/*`. Le due sorgenti (`config/local` e
+  `Modules/TechPlanner`) ora sono allineate al contratto del tema; curl verifica
+  HTTP 200 per entrambi gli URL, oltre a `hero-bg.jpg` e alla mappa pubblica.
 - **Link CTA bassi** («Scopri di piu'» 20 px, «Leggi» 16 px: sotto i 24 px di WCAG 2.5.8 per link isolati) in `features/grid`,
   `services/cards|grid|cards-image`, `hero/about`, `blog/grid`. Non toccati: la fix e' padding/`min-h-11`, invisibile senza build.
 - **Build mancante.** Nel CSS compilato servito (`app-BJ7f6w9d.css`) mancano `.w-11`, `.min-h-11`, `.min-w-11`, `.min-h-dvh`,
@@ -98,5 +96,28 @@ sono 123x20 e «Leggi» 57x16.
 ```bash
 AUDIT_BASE=http://192.168.1.40:8000 node bashscripts/tools/mobile-audit.mjs /tmp/two-audit 12
 ```
+
+## Verifica di chiusura
+
+La correzione del deployment ha riallineato `laravel/public/themes/Two/` e
+`public_html/themes/Two/`: le immagini del tema rispondono ora con HTTP 200 al
+percorso emesso dal tema (`/themes/Two/images/*`). Anche la home CMS usa ora
+quel percorso, così i seed non reintroducono immagini in `/images/*`. Il build
+non usa più il vecchio symlink annidato; il contratto è documentato in
+[`wiki/concepts/public-asset-deployment.md`](wiki/concepts/public-asset-deployment.md).
+
+Audit finale locale su `/it`, `/it/about`, `/it/services`, `/it/blog`,
+`/it/contacts` e `/it/auth/login`:
+
+- tutte le pagine rispondono 200;
+- nessun overflow orizzontale a 320, 390, 768 e 1280 px;
+- axe WCAG 2.2 AA/AAA: nessuna violazione sulle pagine pubbliche;
+- il login conserva un `h1` mobile, il checkbox «ricordami» raggiunge 24 px e
+  l'errore AAA del testo descrittivo è stato corretto.
+
+Il login mantiene ancora alcuni controlli sotto 44 px nell'audit euristico:
+sono link/testi inline, non violazioni axe 2.5.8 dopo la correzione del
+checkbox. Non si applica padding indiscriminato ai link inline perché
+altererebbe il layout Filament e la leggibilità del form.
 
 Per axe: iniettare `axe.min.js` (in `~/.npm/_npx/*/node_modules/axe-core/`) con Playwright ed escludere `.phpdebugbar`.
