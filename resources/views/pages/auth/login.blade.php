@@ -49,10 +49,10 @@ middleware(['guest']);
                 </a>
 
                 <h1 class="text-4xl xl:text-5xl font-bold leading-tight mb-6">
-                    {{ __('user::auth.login.welcome_back') }}
+                    {{ __('user::auth.login.welcome_back.text') }}
                 </h1>
                 <p class="text-lg leading-relaxed max-w-sm" style="color: rgba(255,255,255,0.8);">
-                    {{ __('user::auth.login.welcome_message') }}
+                    {{ __('user::auth.login.welcome_message.text') }}
                 </p>
             </div>
         </div>
@@ -78,24 +78,11 @@ middleware(['guest']);
                     <div class="relative rounded-3xl bg-white px-5 py-8 sm:px-8 sm:py-10 shadow-2xl"
                          style="ring: 1px solid rgba(229,231,235,0.8);">
 
-<<<<<<< .merge_file_SJKnnh
                         <h2 id="login-heading" class="text-2xl font-bold mb-2" style="color: #111827;">
-                            {{ __('user::auth.login.title') }}
+                            {{ __('user::auth.login.title.label') }}
                         </h2>
                         <p class="text-sm mb-8" style="color: #6b7280;">
-                            {{ __('Inserisci le tue credenziali per accedere') }}
-=======
-                        {{-- Il titolo del pannello desktop e' h2 perche' il brand panel espone gia' l'h1. --}}
-                        <h2 id="login-heading" class="hidden lg:block text-2xl font-bold mb-2" style="color: #111827;">
-                            {{ __('user::auth.login.title.label') }}
-                        </h2>
-                        {{-- Su mobile il brand panel e' nascosto: la pagina deve conservare un h1 visibile. --}}
-                        <h1 class="lg:hidden text-2xl font-bold mb-2" style="color: #111827;">
-                            {{ __('user::auth.login.title.label') }}
-                        </h1>
-                        <p class="text-sm mb-8" style="color: #4b5563;">
                             {{ __('user::auth.login.subtitle.text') }}
->>>>>>> .merge_file_MZmsh4
                         </p>
 
                         @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)

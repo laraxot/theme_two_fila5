@@ -23,10 +23,6 @@
             @endisset
         </main>
 
-<<<<<<< .merge_file_W7z1kb
-        @livewire('notifications')
-=======
->>>>>>> .merge_file_Cnm7nt
         @livewireScripts
         {{-- Widget Filament (auth): servono gli Alpine data provider Filament
              (filamentSchema, passwordRevealFormComponent) — @filamentScripts(withCore: true)

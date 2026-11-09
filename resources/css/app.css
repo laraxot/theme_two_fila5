@@ -139,59 +139,6 @@ body:has([data-mobile-nav-toggle][aria-expanded="true"]) .gdpr-cookiebar {
     display: none !important;
 }
 
-/*
- * Header pubblico `fixed`: esce dal flusso, quindi lo spazio che occupa si riserva UNA volta sola,
- * sul contenitore principale (layouts/main.blade.php, classe pt-[var(--site-header-h)]) e non hero per hero.
- * --site-header-h = altezza dell'header, vedi sections/header/v1.blade.php:
- *   - sotto lg (mobile/tablet) l'header e' SEMPRE compatto: py-2 (1rem) + riga h-16 (4rem) = 5rem. Meno schermo perso e nessun
- *     salto di altezza allo scroll;
- *   - da lg a inizio pagina: py-4 (2rem) + riga h-20 (5rem) = 7rem; da scrollato si riduce a 5rem (non cresce mai).
- * NON sovrascrivere il padding-top dell'header (py-4/py-2): una regola `.fixed[data-mobile-nav]{padding-top:env(...)}`
- * lo azzerava e l'header scendeva da 112 a 96px. La safe-area serve solo con viewport-fit=cover, che il tema non usa.
- */
-:root {
-    --site-header-h: 5rem;
-}
-
-@media (min-width: 64rem) {
-    :root {
-        --site-header-h: 7rem;
-    }
-}
-
-/* WCAG 2.4.11 / 2.4.12: ancore e focus da tastiera non finiscono sotto l'header fisso (altezza + 1rem di margine). */
-html {
-    scroll-padding-top: calc(var(--site-header-h) + 1rem);
-}
-
-/*
- * Barra cookie (Modules/Gdpr): quando copre un controllo del primo schermo, o il viewport e' basso (30rem), lo script
- * del modulo la mette in flusso, in cima al body (data-layout="flow"), e l'header fisso la copriva (restavano visibili
- * 15px e "Ho capito" era irraggiungibile). La si fa partire sotto l'header e, finche' e' visibile, il main non aggiunge
- * un secondo offset.
- */
-body:has(> header[data-mobile-nav]) > .gdpr-cookiebar[data-layout="flow"] {
-    margin-top: var(--site-header-h);
-}
-
-body:has(> header[data-mobile-nav]):has(> .gdpr-cookiebar[data-layout="flow"]:not([hidden])) #main-content {
-    padding-top: 0;
-}
-
-/* Menu mobile aperto: il pannello sta nell'header (z-50) e la barra fissa, a z-index massimo, ne copriva le ultime voci (320x568). */
-body:has([data-mobile-nav-toggle][aria-expanded="true"]) .gdpr-cookiebar {
-    z-index: 40;
-}
-
-.fixed[data-mobile-nav] [data-mobile-nav-panel] {
-    max-height: calc(100dvh - var(--site-header-h) - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-    padding-bottom: max(1rem, env(safe-area-inset-bottom));
-}
-
-[x-cloak] {
-    display: none !important;
-}
-
 /* WCAG 2.1 AA Accessibility Improvements */
 
 /* Screen reader only content */

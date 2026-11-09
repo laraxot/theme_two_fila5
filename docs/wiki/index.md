@@ -17,11 +17,7 @@ Tema **Two** — secondo tema del progetto.
 
 | Cartella | Contenuto |
 |----------|-----------|
-<<<<<<< .merge_file_rm1LMf
-| [concepts/](./concepts/) | [filament-xotbase-boundary](./concepts/filament-xotbase-boundary.md), [json-content-religion](./concepts/json-content-religion.md), [ponytail-audit](./concepts/ponytail-audit.md), [theme-root-uppercase-folders](./concepts/theme-root-uppercase-folders.md) |
-=======
 | [concepts/](./concepts/) | [mobile-navigation-contract](./concepts/mobile-navigation-contract.md), [ponytail-audit](./concepts/ponytail-audit.md), [public-asset-deployment](./concepts/public-asset-deployment.md), [theme-root-uppercase-folders](./concepts/theme-root-uppercase-folders.md) |
->>>>>>> .merge_file_fUad9k
 | `decisions/`, `glossary/`, `how-to/`, `index/`, `reference/` | cartelle vuote (solo `.gitkeep`) |
 
 Altro: [log.md](./log.md), [AGENTS.md](./AGENTS.md) (istruzioni per chi mantiene la wiki). Indice di tutta la docs del tema: [../index.md](../index.md). Le cartelle `rules/` e `skills/` citate dal log iniziale non esistono.

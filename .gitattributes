@@ -1,42 +1,5 @@
-<<<<<<< .merge_file_JQ6Su6
-<<<<<<< .merge_file_CYKGem
 * text=auto
 
-=======
-# Prototype: laravel/Modules/* e laravel/Themes/*
-# Canon: repository binary attribute policy.
-# Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
-#
-# I binari restano blob Git normali.
-*.css linguist-vendored
-*.scss linguist-vendored
-*.js linguist-vendored
-CHANGELOG.md export-ignore
-# Binary files as regular Git blobs.
-# `binary` + `!filter` disables inherited filters.
-*.png binary !filter
-*.jpg binary !filter
-*.jpeg binary !filter
-*.gif binary !filter
-*.webp binary !filter
-*.ico binary !filter
-*.svg binary !filter
-*.psd binary !filter
-*.pdf binary !filter
-*.zip binary !filter
-*.woff binary !filter
-*.woff2 binary !filter
-*.ttf binary !filter
-*.eot binary !filter
-*.otf binary !filter
-*.phar binary !filter
-*.db binary !filter
-*.sqlite binary !filter
->>>>>>> .merge_file_VGbyOy
-=======
-* text=auto
-
->>>>>>> .merge_file_G4C50k
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html

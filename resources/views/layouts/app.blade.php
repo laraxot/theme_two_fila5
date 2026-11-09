@@ -6,15 +6,8 @@
         <main class="relative min-h-screen">
             {{ $slot }}
         </main>
-<<<<<<< .merge_file_m5HIhw
-        @livewire('notifications')
         <x-section slug="footer" />
         @livewireScripts
-        @filamentScripts
-=======
-        <x-section slug="footer" />
-        @livewireScripts
->>>>>>> .merge_file_iNrCCp
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
