@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_JQ6Su6
 <<<<<<< .merge_file_CYKGem
 * text=auto
 
@@ -32,16 +33,16 @@ CHANGELOG.md export-ignore
 *.db binary !filter
 *.sqlite binary !filter
 >>>>>>> .merge_file_VGbyOy
+=======
+* text=auto
+
+>>>>>>> .merge_file_G4C50k
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
+
 /.github export-ignore
+CHANGELOG.md export-ignore
 .styleci.yml export-ignore
-*.png !text !filter !merge !diff
-*.svg !text !filter !merge !diff
-*.jpg !text !filter !merge !diff
-*.jpeg !text !filter !merge !diff
-*.gif !text !filter !merge !diff
-*.webp !text !filter !merge !diff

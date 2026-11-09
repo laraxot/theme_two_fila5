@@ -21,7 +21,10 @@
         @endif
 
         @livewireScripts
+<<<<<<< .merge_file_JXmymR
         @filamentScripts
+=======
+>>>>>>> .merge_file_Enr7db
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>

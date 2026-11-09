@@ -51,7 +51,10 @@
         <x-section slug="footer"/>
 
         @livewireScripts
+<<<<<<< .merge_file_iiXi2n
         @filamentScripts
+=======
+>>>>>>> .merge_file_rrIgLn
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
