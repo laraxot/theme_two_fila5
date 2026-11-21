@@ -5,7 +5,7 @@
 ])
 
 @php
-    $displayAddress = $address ?: 'Via Vanzo 86/A, 31021 Mogliano Veneto TV';
+    $displayAddress = $address ?: 'Via Augusto Vanzo 86 A, 31021 Mogliano Veneto (TV)';
 
     // Link navigazione Google Maps (gratuito, non è una chiamata API)
     if (!empty($coordinates['lat']) && !empty($coordinates['lng'])) {
@@ -15,8 +15,8 @@
     }
 
     // PNG locale (screenshot manuale da Google Maps UI) - niente richieste esterne a runtime.
-    $imagePath = public_path('modules/techplanner/images/map-via-vanzo.png');
-    $imageUrl = asset('modules/techplanner/images/map-via-vanzo.png');
+    $imagePath = public_path('assets/techplanner/images/map-via-vanzo.png');
+    $imageUrl = asset('assets/techplanner/images/map-via-vanzo.png');
 
     $hasLocalImage = file_exists($imagePath) && filesize($imagePath) > 1000;
 @endphp
