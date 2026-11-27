@@ -23,6 +23,13 @@ related:
   (`Modules/Geo/docs/adr/0003-osm-proxy-tile-nominatim.md`).
 - Domanda: come si mostra una mappa nel tema senza costi e senza richieste a terzi?
 
+## Driver della decisione
+
+- Zero costi: Google Maps JavaScript API richiede chiave e fatturazione (regola `map-free-rules`).
+- Privacy: nessuna richiesta a un dominio terzo al caricamento della pagina; il terzo riceve l'IP solo al click.
+- Il bisogno reale e' "vedere il posto e aprire la navigazione", non una mappa interattiva.
+- Se serve interattivita', il percorso canonico e' il proxy del modulo Geo, non script o iframe diretti.
+
 ## Decisione
 
 - `components/blocks/map/embed.blade.php` e `components/blocks/map/static-clickable.blade.php` mostrano un'**immagine

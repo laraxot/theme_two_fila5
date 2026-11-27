@@ -25,6 +25,15 @@ related:
   blocchi del JSON `config/local/<tenant>/database/content/pages/<slug>.json`.
 - Domanda: dove va una pagina nuova, o la logica di un form o di un elenco?
 
+## Driver della decisione
+
+- Il tema si riusa tra installazioni diverse (`pub_theme` per tenant): contenuti e logica non possono stare nel
+  codice del tema.
+- Le pagine cambiano senza deploy: i contenuti vivono nei JSON versionati del tenant, con review.
+- Il routing Folio + Volt e la risoluzione in `Modules/Cms` coprono gia' il front office: niente controller
+  duplicati.
+- `app/` del tema resta minimale (solo `ThemeServiceProvider`): un confine verificabile e facile da tenere.
+
 ## Decisione
 
 - Una pagina di contenuto e' un **file JSON del tenant** con i suoi `blocks`; il tema fornisce solo i componenti
