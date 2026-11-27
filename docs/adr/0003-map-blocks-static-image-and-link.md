@@ -7,7 +7,7 @@ created: 2026-11-24
 updated: 2026-11-24
 related:
   - ../map-free-rules.md
-  - ../../../../Modules/Geo/docs/adr/osm-proxy-tile-nominatim.md
+  - ../../../../Modules/Geo/docs/adr/0003-osm-proxy-tile-nominatim.md
 ---
 
 # ADR: mappa = immagine statica locale + link a un servizio di mappe
@@ -20,7 +20,7 @@ related:
   API a pagamento»).
 - Un iframe o un tile caricato da un dominio terzo all'apertura della pagina passa l'IP del visitatore al terzo prima di
   ogni scelta sui cookie: e' lo stesso problema che il modulo Geo risolve con un proxy
-  (`Modules/Geo/docs/adr/osm-proxy-tile-nominatim.md`).
+  (`Modules/Geo/docs/adr/0003-osm-proxy-tile-nominatim.md`).
 - Domanda: come si mostra una mappa nel tema senza costi e senza richieste a terzi?
 
 ## Decisione

@@ -6,7 +6,7 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 
 /*
- * docs/adr/map-blocks-static-image-and-link.md: i blocchi mappa mostrano un'immagine locale e un link; nessuna API di mappe a
+ * docs/adr/0003-map-blocks-static-image-and-link.md: i blocchi mappa mostrano un'immagine locale e un link; nessuna API di mappe a
  * pagamento e nessuna richiesta a un terzo al caricamento della pagina (iframe, script, tile). Test sul sorgente, senza app.
  */
 test('map blocks load no third-party map at page load', function (): void {
